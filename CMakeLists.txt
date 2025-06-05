@@ -50,6 +50,7 @@ pico_enable_stdio_usb(synth_audio 1)
 target_link_libraries(synth_audio
         # Biblioteca padrão do Pico SDK, que fornece funções básicas para o RP2040 (GPIO, temporizadores, UART, etc.).
         pico_stdlib
+        hardware_adc
         )
 
 # Add the standard include files to the build
