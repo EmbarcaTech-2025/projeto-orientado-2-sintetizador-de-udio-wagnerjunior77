@@ -11,6 +11,10 @@
 ### 🧾 Descrição Geral
 Este projeto implementa um sistema embarcado que permite gravar e reproduzir áudio utilizando o microcontrolador RP2040 (BitDogLab). O sistema integra componentes como microfone analógico, saída de áudio via PWM, joystick para configuração de tempo de gravação, botões físicos para controle, LEDs RGB como indicadores visuais e um display OLED para feedback textual e visualização do áudio em tempo real.
 
+### 🎥 Vídeo de Demonstração
+
+https://www.youtube.com/shorts/Z2gVA09CP5w
+
 ### 🧠 Funcionalidades Principais
 - **Gravação de áudio** (até 15 segundos) via ADC.
 - **Reprodução de áudio** com filtro simples por PWM.
