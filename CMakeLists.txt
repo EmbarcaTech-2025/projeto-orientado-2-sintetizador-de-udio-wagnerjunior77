@@ -37,6 +37,7 @@ pico_sdk_init()
 
 add_executable( synth_audio
   main.c
+  ./include/ssd1306_i2c.c
 )
 
 pico_set_program_name(synth_audio "synth_audio")
@@ -50,6 +51,7 @@ pico_enable_stdio_usb(synth_audio 1)
 target_link_libraries(synth_audio
         # Biblioteca padrão do Pico SDK, que fornece funções básicas para o RP2040 (GPIO, temporizadores, UART, etc.).
         pico_stdlib
+        hardware_i2c
         hardware_adc
         )
 
@@ -62,6 +64,7 @@ target_include_directories(synth_audio PRIVATE
 # Add any user requested libraries
 target_link_libraries(synth_audio 
         hardware_adc
+        hardware_i2c
         hardware_dma
         hardware_pwm
 )
